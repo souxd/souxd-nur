@@ -41,7 +41,6 @@ stdenv.mkDerivation rec {
  an external server to let users communicate with each other.'';
     homepage = https://www.beebeep.net/;
     changelog = "https://sourceforge.net/p/beebeep/code/HEAD/tree/CHANGELOG.txt";
-    maintainers = with maintainers; [ souxd ];
     licence = licenses.gpl3;
     platforms = platforms.linux;
   };

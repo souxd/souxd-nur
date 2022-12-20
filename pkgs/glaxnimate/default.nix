@@ -24,7 +24,6 @@ with Shotcut and Kdenlive.
 '';
     homepage = https://glaxnimate.mattbas.org/;
     changelog = "https://gitlab.com/mattbas/glaxnimate/-/releases";
-    maintainers = with maintainers; [ souxd ];
     license = licenses.gpl3;
     platforms = platforms.linux;
   };
