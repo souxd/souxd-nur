@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
   src = fetchhg {
     url = "https://hg.osdn.net/view/zandronum/zandronum-stable";
     rev = "2c280cd262f3";
-    sha256 = "1md96sa69501bzwgy5llwjk2aggvyvx1a1pncm3ihymx14720fvh";
+    sha256 = "0146wyh7n4r3jw2l01l5ip5pnnmplsvzlw66ic6l137dw95fdz42";
   };
 
   # zandronum tries to download sqlite now when running cmake, don't let it
@@ -95,6 +95,5 @@ stdenv.mkDerivation rec {
     description = "Multiplayer oriented port, based off Skulltag, for Doom and Doom II by id Software";
     license = licenses.unfreeRedistributable;
     platforms = platforms.linux;
-    broken = true;
   };
 }
