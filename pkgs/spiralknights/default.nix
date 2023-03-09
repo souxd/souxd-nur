@@ -15,6 +15,7 @@ stdenv.mkDerivation {
   nativeBuildInputs = [ jdk ];
 
   meta = with lib; {
+    license = licenses.unfree;
     broken = true;
   };
 }
