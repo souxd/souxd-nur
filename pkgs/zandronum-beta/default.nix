@@ -13,6 +13,7 @@
 , zlib
 , libjpeg
 , fluidsynth
+, fmodex
 , openssl
 , gtk2
 , python3
@@ -22,7 +23,7 @@
 
 let
   suffix = lib.optionalString serverOnly "-server";
-  fmod = callPackage ./fmod.nix { };
+  fmod = fmodex; # fmodex is in nixpkgs now
   sqlite = callPackage ./sqlite.nix { };
   clientLibPath = lib.makeLibraryPath [ fluidsynth ];
 

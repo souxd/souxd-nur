@@ -50,19 +50,19 @@
 
 stdenv.mkDerivation rec {
   name = "flashplayer-standalone-${version}";
-  version = "32.0.0.171";
+  version = "32.0.0.465";
 
   src = fetchurl {
     url =
       if debug then
-        "https://archive.org/download/flashplayerarchive/pub/flashplayer/installers/archive/fp_32.0.0.371_archive.zip/32_0_r0_371_debug%2Fflashplayer32_0r0_371_linux_sa_debug.x86_64.tar.gz"
+        "http://web.archive.org/web/20201231144810/https://fpdownload.macromedia.com/pub/flashplayer/updaters/32/flash_player_sa_linux_debug.x86_64.tar.gz"
       else
-        "https://archive.org/download/flashplayerarchive/pub/flashplayer/installers/archive/fp_32.0.0.371_archive.zip/32_0_r0_371%2Fflashplayer32_0r0_371_linux_sa.x86_64.tar.gz";
+        "http://web.archive.org/web/20201231144810/https://fpdownload.macromedia.com/pub/flashplayer/updaters/32/flash_player_sa_linux.x86_64.tar.gz";
     sha256 =
       if debug then
-        "0n3bk2y1djaqrdygnr81n8lsnj2k60kaziffl41zpdvzi1jc7wgn"
+        "1ija3z5bxg0ppx9r237cxs1cdrhk6pia2kcxbrm6y30kvzrd3nqs"
       else
-        "18ll9rnfhbnz54q4d7q9fb13lix4i62zr6z6n574qvwngrvbrr8a";
+        "1hwnvwph7p3nfv2xf7kjw3zdpb546dsia0cmhzg81z016fi7lgw8";
   };
 
   nativeBuildInputs = [ unzip ];
