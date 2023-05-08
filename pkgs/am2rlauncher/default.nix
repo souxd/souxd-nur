@@ -4,6 +4,7 @@
 }:
 
 stdenv.mkDerivation {
+  pname = "am2rlauncher";
 
 
   meta = with lib; {
