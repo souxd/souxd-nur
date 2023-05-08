@@ -4,6 +4,7 @@
 }:
 
 stdenv.mkDerivation {
+  name = "am2rlauncher";
   pname = "am2rlauncher";
 
 
