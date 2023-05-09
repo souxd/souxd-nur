@@ -9,6 +9,8 @@ rec {
 
   spiralknights = pkgs.callPackage ./pkgs/spiralknights {};
 
+  palemoon-avx = pkgs.callPackage ./pkgs/palemoon-avx {};
+
   doomseeker-latest = pkgs.qt5.callPackage ./pkgs/doomseeker-latest {};
 
   zandronum-beta = pkgs.callPackage ./pkgs/zandronum-beta {};
