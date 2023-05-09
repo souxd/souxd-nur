@@ -24,8 +24,8 @@ stdenv.mkDerivation rec {
     urls = [
       "ftp://ftp2.palemoon.org/avx/linux/palemoon-32.1.1.linux-x86_64-avx_gtk3.tar.xz"
     ];
-    sha256 = 
-      "11zk5adhqmrc9dnrppxd7dp1a13xd9v329gf3rfbinm2mxq8pqbw";
+    hash = 
+      "sha256-uqYvrPWFCl1MEVVECnvKjiMxjKg9WS0g737Etb5xcJo=";
   };
 
   preferLocalBuild = true;
