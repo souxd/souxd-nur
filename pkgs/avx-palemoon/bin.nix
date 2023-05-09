@@ -13,7 +13,6 @@
 , makeDesktopItem
 , wrapGAppsHook
 , testers
-, palemoon-bin
 }:
 
 stdenv.mkDerivation rec {
