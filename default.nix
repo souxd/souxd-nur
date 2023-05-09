@@ -11,11 +11,13 @@ rec {
 
   palemoon-avx = pkgs.callPackage ./pkgs/palemoon-avx {};
 
+  palemoon-avx-bin = pkgs.callPackage ./pkgs/palemoon-avx/bin.nix {};
+
   doomseeker-latest = pkgs.qt5.callPackage ./pkgs/doomseeker-latest {};
 
-  zandronum-beta = pkgs.callPackage ./pkgs/zandronum-beta {};
+  zandronum-dev = pkgs.callPackage ./pkgs/zandronum-beta {};
 
-  zandronum-beta-server = zandronum-beta.override {
+  zandronum-dev-server = zandronum-dev.override {
     serverOnly = true;
   };
 
