@@ -9,9 +9,9 @@ rec {
 
   spiralknights = pkgs.callPackage ./pkgs/spiralknights {};
 
-  palemoon-avx = pkgs.callPackage ./pkgs/palemoon-avx {};
+  avx-palemoon = pkgs.callPackage ./pkgs/avx-palemoon {};
 
-  palemoon-avx-bin = pkgs.callPackage ./pkgs/palemoon-avx/bin.nix {};
+  avx-palemoon-bin = pkgs.callPackage ./pkgs/avx-palemoon/bin.nix {};
 
   doomseeker-latest = pkgs.qt5.callPackage ./pkgs/doomseeker-latest {};
 
