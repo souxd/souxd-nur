@@ -15,7 +15,7 @@ rec {
 
   doomseeker-latest = pkgs.qt5.callPackage ./pkgs/doomseeker-latest {};
 
-  zandronum-dev = pkgs.callPackage ./pkgs/zandronum-beta {};
+  zandronum-dev = pkgs.callPackage ./pkgs/zandronum-dev {};
 
   zandronum-dev-server = zandronum-dev.override {
     serverOnly = true;
