@@ -9,6 +9,8 @@ rec {
 
   spiralknights = pkgs.callPackage ./pkgs/spiralknights {};
 
+  doomseeker-latest = pkgs.qt5.callPackage ./pkgs/doomseeker-latest {};
+
   zandronum-beta = pkgs.callPackage ./pkgs/zandronum-beta {};
 
   zandronum-beta-server = zandronum-beta.override {
